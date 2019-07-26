@@ -2,8 +2,8 @@
 // Created by Kosho Owa on 2019-07-25.
 //
 
-#ifndef NETFLOW_TRAFFIC_GENERATOR_WORKER_H
-#define NETFLOW_TRAFFIC_GENERATOR_WORKER_H
+#ifndef NFGEN_WORKER_H
+#define NFGEN_WORKER_H
 
 #include <iostream>
 #include <sys/types.h>
@@ -38,4 +38,4 @@ private:
     void safe_cout(const string &msg);
 };
 
-#endif //NETFLOW_TRAFFIC_GENERATOR_WORKER_H
+#endif //NFGEN_WORKER_H

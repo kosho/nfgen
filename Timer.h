@@ -2,8 +2,8 @@
 // Created by Kosho Owa on 2019-07-25.
 //
 
-#ifndef NETFLOW_TRAFFIC_GENERATOR_TIMER_H
-#define NETFLOW_TRAFFIC_GENERATOR_TIMER_H
+#ifndef NFGEN_TIMER_H
+#define NFGEN_TIMER_H
 
 #include <iostream>
 #include <thread>
@@ -13,7 +13,6 @@ using namespace std;
 
 class Timer {
 public:
-    Timer();
 
     Timer(std::atomic_ulong *requests);
 
@@ -24,4 +23,4 @@ private:
 
 };
 
-#endif //NETFLOW_TRAFFIC_GENERATOR_TIMER_H
+#endif //NFGEN_TIMER_H
