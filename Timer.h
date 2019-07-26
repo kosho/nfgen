@@ -14,7 +14,7 @@ using namespace std;
 class Timer {
 public:
 
-    Timer(std::atomic_ulong *requests);
+    explicit Timer(std::atomic_ulong *requests);
 
     void Start();
 
