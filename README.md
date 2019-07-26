@@ -8,7 +8,11 @@ Usage: `nfgen [-t num_threads (3)] [-p port (9995)] target_ip`
 - `-p port`: Target port number (default 9995)
 - `target_ip` Receiver's IP address
 
-Downloads
+## Downloads
 
 - [nfgen (linux-x86_64)](https://github.com/kosho/esperf/releases/download/0.1.0/nfgen/nfgen-0.1.0-linux-x86_64.gz)
 - [nfgen (darwin-x86_64)](https://github.com/kosho/esperf/releases/download/0.1.0/nfgen/nfgen-0.1.0-darwin-x86_64.gz)
+
+## Building
+
+Run `cmake ./CMakeLists.txt`, then `make` from the command line to build the executable.
