@@ -1,0 +1,14 @@
+//
+// Created by Kosho Owa on 2019-07-25.
+//
+
+#ifndef NETFLOW_TRAFFIC_GENERATOR_OPTIONS_H
+#define NETFLOW_TRAFFIC_GENERATOR_OPTIONS_H
+
+
+class Options {
+
+};
+
+
+#endif //NETFLOW_TRAFFIC_GENERATOR_OPTIONS_H
