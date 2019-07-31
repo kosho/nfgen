@@ -7,12 +7,12 @@
 using namespace std;
 
 u_int _NUM_THREADS = 3;
-u_int _NF_PORT = 9995;
+u_short _NF_PORT = 9995;
 
 int main(int argc, char *argv[]) {
 
     u_int num_threads_ = _NUM_THREADS;
-    unsigned short port_ = _NF_PORT;
+    u_short port_ = _NF_PORT;
     char *dest_;
 
     mutex mtx_;
@@ -44,6 +44,7 @@ int main(int argc, char *argv[]) {
                     return EXIT_FAILURE;
                 }
                 break;
+                // TODO: Timestamp, metric CSV output
             default:
                 cout << "Usage: " << argv[0] << " [-t num_threads (" << _NUM_THREADS << ")] [-p port (" << _NF_PORT
                      << ")] target_ip" << endl;
@@ -63,7 +64,7 @@ int main(int argc, char *argv[]) {
     thWorker = new thread[num_threads_];
 
     for (u_int i = 0; i < num_threads_; i++) {
-        thWorker[i] = thread(&Worker::Run, Worker(dest_, &port_, &mtx_, &requests_));
+        thWorker[i] = thread(&Worker::Run, Worker(dest_, port_, &mtx_, &requests_));
     }
 
     // timer thread

@@ -23,15 +23,14 @@ class Worker {
 public:
     Worker();
 
-    Worker(char *dest, u_int *port, mutex *mtx, atomic_ulong *requests);
 
-    Worker(char *dest, unsigned short *port, mutex *mtx, atomic_ulong *requests);
+    Worker(char *dest, u_short port, mutex *mtx, atomic_ulong *requests);
 
     void Run();
 
 private:
     char *dest_;
-    unsigned short *port_;
+    u_short port_;
     std::mutex *mtx_;
     std::atomic_ulong *requests_;
 

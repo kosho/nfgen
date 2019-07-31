@@ -10,8 +10,8 @@ Usage: `nfgen [-t num_threads (3)] [-p port (9995)] target_ip`
 
 ## Downloads
 
-- [nfgen (linux-x86_64)](https://github.com/kosho/nfgen/releases/download/0.1.0/nfgen-0.1.0-linux-x86_64.gz)
-- [nfgen (darwin-x86_64)](https://github.com/kosho/nfgen/releases/download/0.1.0/nfgen-0.1.0-darwin-x86_64.gz)
+- [nfgen (linux-x86_64)](https://github.com/kosho/nfgen/releases/download/0.1.1/nfgen-0.1.1-linux-x86_64.gz)
+- [nfgen (darwin-x86_64)](https://github.com/kosho/nfgen/releases/download/0.1.1/nfgen-0.1.1-darwin-x86_64.gz)
 
 ## Building
 

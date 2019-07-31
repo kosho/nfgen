@@ -94,8 +94,8 @@ void Worker::Run() {
 
 }
 
-Worker::Worker(char *dest, unsigned short *port, mutex *mtx, atomic_ulong *requests) : dest_(dest), port_(port),
-                                                                                       mtx_(mtx), requests_(requests) {}
+Worker::Worker(char *dest, u_short port, mutex *mtx, atomic_ulong *requests) : dest_(dest), port_(port),
+                                                                               mtx_(mtx), requests_(requests) {}
 
 void Worker::safe_cout(const string &msg) {
     lock_guard<mutex> lock(*mtx_);
