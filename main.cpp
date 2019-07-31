@@ -44,7 +44,6 @@ int main(int argc, char *argv[]) {
                     return EXIT_FAILURE;
                 }
                 break;
-                // TODO: Timestamp, metric CSV output
             default:
                 cout << "Usage: " << argv[0] << " [-t num_threads (" << _NUM_THREADS << ")] [-p port (" << _NF_PORT
                      << ")] target_ip" << endl;
@@ -68,6 +67,7 @@ int main(int argc, char *argv[]) {
     }
 
     // timer thread
+    cout << "Timestamp, Requests/s" << endl;
     thread th_timer(&Timer::Start, Timer(&requests_));
 
     // run workers

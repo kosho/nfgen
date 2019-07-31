@@ -21,6 +21,7 @@ public:
 private:
     std::atomic_ulong *requests_;
 
+    string get_iso8601_timestamp();
 };
 
 #endif //NFGEN_TIMER_H
